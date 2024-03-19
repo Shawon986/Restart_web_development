@@ -107,13 +107,47 @@
                 </tfoot>
             </table>
             <br>
-            <p>
-                <a href="#">Back to top</a>
-            </p>
-
+            
         </article>
+        <h3 id="store hours">We are open 7 days a week !!</h3>
+        <dl>
+            <dt>Sunday-Thursday</dt>
+            <dd>11am-9pm</dd>
+            <dt>Friday-Saturday</dt>
+            <dd>11am-11pm</dd>
+        </dl>
+
+        <h2 id="contact us">Our contact form</h2>
+        <form action="https://formspree.io/f/xwkjvqgk" method="POST">
+            <fieldset>
+                <legend>Send us a message</legend>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                    
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                    
+                </p>
+                <p>
+                    <label for="messages">Message:</label><br>
+                    <textarea name="messages" id="messages" cols="30" rows="5" placeholder="Type your message here"></textarea>
+                </p>
+            </fieldset><br>
+           <button type="submit">Send</button> 
+           <button type="reset">Reset</button> 
+        </form>
+
+
     </main>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
     <hr>
+    
+
     <footer>
         <p>Copyright &copy; China Cusine</p>
     </footer>
