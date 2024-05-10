@@ -5,4 +5,10 @@ function updateButtonName(buttonText){
 }
 
 updateButtonName("Send");
-updateButtonName("Download");
+
+function updateButtonWithClick(){
+    updateButtonName("Download");
+
+}
+const button = document.getElementById("btn");
+button.addEventListener('click',updateButtonWithClick);
