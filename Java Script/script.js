@@ -1,7 +1,8 @@
 
-
-function updateButtonName(){
+function updateButtonName(buttonText){
     const button = document.getElementById("btn");
-    button.innerText = "Click me";
+    button.innerText = buttonText;
 }
-updateButtonName();
+
+updateButtonName("Send");
+updateButtonName("Download");
