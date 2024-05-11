@@ -7,8 +7,15 @@ const displayElement = document.getElementById("counter");
 incrementButton.addEventListener("click",incrementCount);
 
 function incrementCount(){
-    count += 1;
-    displayElement.innerText = count ;
+    if(count>=20){
+        alert("You have reached the maximum value")
+        displayElement.innerText = count ;
+        return count;
+    }else{
+        count +=1;
+        displayElement.innerText = count ;
+
+    }
 
 }
 
