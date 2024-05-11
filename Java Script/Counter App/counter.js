@@ -21,7 +21,15 @@ function incrementCount(){
 
 decrementButton.addEventListener("click",decrementCount);
 function decrementCount(){
-    count -= 1;
-    displayElement.innerText = count ;
+    if(count<=0){
+        alert("You have reached the minimum limit")
+        displayElement.innerText = count ;
+        return count;
+
+    }else{
+        count -= 1;
+        displayElement.innerText = count ;
+    }
+    
 
 }
