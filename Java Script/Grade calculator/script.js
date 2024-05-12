@@ -7,8 +7,14 @@ function setDiaplayText(text){
 }
 
 
+
 buttons.addEventListener('click',function (){
-    const grade = gradeValue.value ;
+    if(gradeValue.value === ''){
+        gradeValue.style.border = "2px solid red"
+        setDiaplayText("Please input a number");
+        return;
+    }
+    const grade =parseFloat( gradeValue.value) ;
     if(grade>100 || grade<0){
         setDiaplayText ("ভাল করে নাম্বার দেখে দে গরিব !!!!") 
     }else if(grade>=80){

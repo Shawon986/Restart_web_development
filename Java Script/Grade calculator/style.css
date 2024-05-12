@@ -28,7 +28,7 @@ body{
     
 }
 input{
-    border: 1.5px solid black;
+    /* border: 1.5px solid black; */
     border-radius: 3px;
     padding: 9px;
 }
