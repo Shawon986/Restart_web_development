@@ -9,10 +9,12 @@ function compare(){
     const number2 = parseInt(secondInput.value);
 
     if (number1 === number2){
-        resultPlace.innerHTML = "First and Second number is equal";
+        resultPlace.innerText = "First and Second number is equal";
         
+    }else if (number1>number2){
+        resultPlace.innerText = "First number is greater than second number";
     }else{
-        resultPlace.innerHTML = "First and Second number is not equal";
+        resultPlace.innerText = "First number is less than second number";
     }
     
 }
