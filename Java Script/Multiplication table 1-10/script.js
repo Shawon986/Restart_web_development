@@ -1,5 +1,7 @@
 const generateButton = document.getElementById('generate');
 const tableContainer = document.getElementById('table-container');
+const containertopRow = document.getElementById("topRow");
+const containerbottomRow = document.getElementById("bottomRow");
 
 function createTableFor(number){
   const table = document.createElement("table");
@@ -25,11 +27,18 @@ function createTableFor(number){
 }
 
 generateButton.addEventListener('click', function () {
-    tableContainer.innerHTML = '';
+    containertopRow.innerHTML ='';
+    containerbottomRow.innerHTML ='';
 
   for(let number=1; number<=10 ; number++){
     const table = createTableFor(number);
-    tableContainer.appendChild(table);
+
+
+    if(number<=5){
+        containertopRow.appendChild(table);
+    }else{
+        containerbottomRow.appendChild(table);
+    }
   } 
 
 });
