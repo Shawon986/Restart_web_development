@@ -2,14 +2,9 @@ const numberInput = document.getElementById('input-number');
 const generateButton = document.getElementById('generate');
 const tableContainer = document.getElementById('table-container');
 
-generateButton.addEventListener('click', function () {
-  const number = parseInt(numberInput.value);
-
+function createTableFor(number){
   const table = document.createElement("table");
   table.className = "w-full border-collapse text-center";
-
-
-  tableContainer.innerHTML = '';
 
   for (let i = 1; i <= 10; i++) {
     const tableRow = document.createElement("tr");
@@ -27,6 +22,16 @@ generateButton.addEventListener('click', function () {
     table.appendChild(tableRow);
 
   }
+  return table;
+}
+
+generateButton.addEventListener('click', function () {
+  const number = parseInt(numberInput.value);
+
+  tableContainer.innerHTML = '';
+
+  const table = createTableFor(number);
+ 
 
   tableContainer.appendChild(table);
 
