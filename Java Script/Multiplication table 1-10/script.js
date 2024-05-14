@@ -1,4 +1,3 @@
-const numberInput = document.getElementById('input-number');
 const generateButton = document.getElementById('generate');
 const tableContainer = document.getElementById('table-container');
 
@@ -11,7 +10,7 @@ function createTableFor(number){
     tableRow.className = "border";
 
     const leftCell= document.createElement("td");
-    leftCell.innerText = `${number} * ${i}`;
+    leftCell.innerText = `${number} * ${i} =`;
 
     const rightCell = document.createElement("td");
     rightCell.innerText = number * i ;
@@ -26,13 +25,11 @@ function createTableFor(number){
 }
 
 generateButton.addEventListener('click', function () {
-  const number = parseInt(numberInput.value);
+    tableContainer.innerHTML = '';
 
-  tableContainer.innerHTML = '';
-
-  const table = createTableFor(number);
- 
-
-  tableContainer.appendChild(table);
+  for(let number=1; number<=10 ; number++){
+    const table = createTableFor(number);
+    tableContainer.appendChild(table);
+  } 
 
 });
