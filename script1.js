@@ -8,4 +8,10 @@ function incrementCount(){
     counterDisplay.innerText = count;
 }
 
+function decrementCount(){
+    count -=1 ;
+    counterDisplay.innerText = count;
+}
+
 plusButton.addEventListener('click',incrementCount);
+minusButton.addEventListener('click',decrementCount);
