@@ -1,20 +1,13 @@
-function getButtonElement(){
-    const button = document.getElementById("btn");
-    return button;
-} 
+const getButton = document.getElementById("btn");
 
-function updateButtonName(buttonText){
-    // const button = getButtonElement();
-    // button.innerText = buttonText;
-    getButtonElement().innerText = buttonText;   // Shortcut
+function updateButton(buttonText){
+    const getButton = document.getElementById("btn");
+    getButton.innerText = buttonText;
+}
+updateButton("Click me");
+
+function updateNewButton(){
+    updateButton("Send me");
 }
 
-updateButtonName("Send");
-
-function updateButtonWithClick(){
-    updateButtonName("Download");
-
-}
-// const button = getButtonElement();
-// button.addEventListener('click',updateButtonWithClick);
-getButtonElement().addEventListener('click',updateButtonWithClick); // Shortcut
+getButton.addEventListener('click',updateNewButton)
