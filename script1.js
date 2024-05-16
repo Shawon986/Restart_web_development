@@ -9,6 +9,12 @@ function incrementCount(){
 }
 
 function decrementCount(){
+
+    if(count<=0){
+        alert("You have reached the minimum limit");
+        return count;
+    }
+
     count -=1 ;
     counterDisplay.innerText = count;
 }
