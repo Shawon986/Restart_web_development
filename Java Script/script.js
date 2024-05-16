@@ -1,8 +1,11 @@
-const getButton = document.getElementById("btn");
+
+function getButton(){
+    const button = document.getElementById("btn");
+    return button;
+}
 
 function updateButton(buttonText){
-    const getButton = document.getElementById("btn");
-    getButton.innerText = buttonText;
+    getButton().innerText = buttonText;
 }
 updateButton("Click me");
 
@@ -10,4 +13,4 @@ function updateNewButton(){
     updateButton("Send me");
 }
 
-getButton.addEventListener('click',updateNewButton)
+getButton().addEventListener('click',updateNewButton);
