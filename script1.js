@@ -4,6 +4,11 @@ const plusButton = document.getElementById("increment");
 const minusButton = document.getElementById("decrement");
 
 function incrementCount(){
+
+    if(count>=10){
+        alert("You have reached the maximum limit");
+        return count;
+    }
     count +=1 ;
     counterDisplay.innerText = count;
 }
