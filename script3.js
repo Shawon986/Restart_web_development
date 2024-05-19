@@ -2,8 +2,13 @@ const markInput = document.getElementById("firstValue");
 const calculateButton = document.getElementById("btns");
 const displayGrade = document.getElementById("result");
 
-let mark = '';
 function calculate(){
+    if(markInput.value===''){
+        markInput.style.border = '2px solid red'
+        displayGrade.innerText = 'Please input mark'
+        return;
+    }
+    
     const mark = parseInt(markInput.value);
     if(mark <= 0 || mark >100){
         displayGrade.innerText = "Invalid mark"
