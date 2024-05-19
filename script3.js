@@ -8,7 +8,7 @@ function calculate(){
     if(mark <= 0 || mark >100){
         displayGrade.innerText = "Invalid mark"
         return;
-    }else if (mark>=80 && mark>=100){
+    }else if (mark>=80 && mark<=100){
         displayGrade.innerText = "A+" 
     }else if (mark>=70 && mark<=79){
         displayGrade.innerText = "A" 
