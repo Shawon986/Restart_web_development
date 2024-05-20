@@ -1,6 +1,6 @@
-const inputNumber = document.getElementById("input-number");
 const buttons = document.getElementById("generate");
-const displayArea = document.getElementById("table-container");
+const tableTopRow = document.getElementById("topRow");
+const tableBottomRow = document.getElementById("bottomRow");
 
 function createTableFor(input){
     const table = document.createElement('table');
@@ -28,10 +28,19 @@ function createTableFor(input){
 }
 
 function generateTable(){
-    const input = parseInt(inputNumber.value);
-    displayArea.innerText = ''
+    tableTopRow.innerText = '';
+    tableBottomRow.innerText = '';
+    for(let input =1; input<=10; input ++){
     const table = createTableFor(input);
-    displayArea.appendChild(table);
+
+        if(input<=5){
+            tableTopRow.appendChild(table) 
+
+        }else{
+            tableBottomRow.appendChild(table)
+        }
+         
+    }
 }
 
 buttons.addEventListener('click',generateTable);
