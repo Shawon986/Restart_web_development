@@ -100,7 +100,7 @@ p{
     gap: 20px;
     padding: 10px;
     font-family: sans-serif;
-    
+    box-shadow: 15px 15px 8px lightblue;
 }
 
 #name{
@@ -139,6 +139,7 @@ p{
     gap: 15px;
     padding: 10px;
     font-family: sans-serif;
+    box-shadow: 15px 15px 8px lightblue;
     
 
 }
