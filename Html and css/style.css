@@ -92,7 +92,7 @@ p{
 .left{
     border: none;
     width: 380px;
-    height: 400px;
+    height: 380px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     display: flex;
@@ -133,7 +133,7 @@ p{
 .right{
     border: none;
     width: 380px;
-    height: 400px;
+    height: 380px;
     background-color: rgb(237, 235, 235);
     color: rgb(0, 0, 0);
     gap: 15px;
