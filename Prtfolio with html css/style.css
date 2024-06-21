@@ -5,12 +5,14 @@
     list-style: none;
     text-decoration: none;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
     
-
 }
+
+
 .nav-bar{
     width: 100%;
-    background-color: rgb(50, 58, 59);
+    background-color: rgb(28, 30, 30);
     padding: 10px;
     color: white;
     position: fixed;
@@ -42,7 +44,7 @@ ul{
     color: aqua;
 }
 .one{
-    color: orange;
+    color: rgb(255, 17, 0);
     font-size: 40px;
 }
 
@@ -53,15 +55,149 @@ ul{
     color: aqua;
 }
 .three{
-    color: orange;
+    color: rgb(255, 132, 0);
     font-size: 40px;
 }
-.main{
-    background-image: url(./Web-Design-Development-Company.png);
-    padding: 100PX;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  
+.hero{
+
+    width: 100%;
+    height: 500px;
+    padding-top: 75px;
+}
+.about{
+    
+    height: 400px;
+    width: 100%;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 3px;
+    align-items: center;
+}
+img{
+    width: 270px;
+    height: 329px;
+}
+
+.info{
+    line-height: 30px;
+}
+.details{
+    text-align: center;
+}
+.me{
+    color: rgb(255, 17, 0);
+}
+
+.skill{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+.first{
+    width: 350px;
+    height: 20px;
+    background-color: rgb(32, 93, 247);
+}
+.second{
+    width: 90%;
+    height: 20px;
+    background-color: rgb(248, 109, 39);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.skills{
+    text-align: center;
+    
+}
+.first1{
+    width: 350px;
+    height: 20px;
+    background-color: rgb(32, 93, 247);
+}
+.second2{
+    width: 85%;
+    height: 20px;
+    background-color: rgb(248, 109, 39);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.first3{
+    width: 350px;
+    height: 20px;
+    background-color: rgb(32, 93, 247);
+}
+.second3{
+    width: 70%;
+    height: 20px;
+    background-color: rgb(248, 109, 39);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.first4{
+    width: 350px;
+    height: 20px;
+    background-color: rgb(32, 93, 247);
+}
+.second4{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(248, 109, 39);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.first5{
+    width: 350px;
+    height: 20px;
+    background-color: rgb(32, 93, 247);
+}
+.second5{
+    width: 95%;
+    height: 20px;
+    background-color: rgb(248, 109, 39);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.first6{
+    width: 350px;
+    height: 20px;
+    background-color: rgb(32, 93, 247);
+}
+.second6{
+    width: 80%;
+    height: 20px;
+    background-color: rgb(248, 109, 39);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
