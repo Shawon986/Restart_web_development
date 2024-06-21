@@ -16,6 +16,7 @@
     padding: 10px;
     color: white;
     position: fixed;
+    
 }
 .nav-item{
     display: flex;
@@ -48,8 +49,9 @@ ul{
     font-size: 40px;
 }
 
-.text-item{
-    color: black;
+.image{
+    margin-top: 2px;
+    background-color: aqua;
 }
 .two{
     color: aqua;
@@ -91,6 +93,26 @@ img{
 .me{
     color: rgb(255, 17, 0);
 }
+.hire-button{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(8, 184, 184);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+}
+.hire-button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: 0.7s;
+    box-shadow: 5px 5px rgb(0, 204, 255);
+    
+}
 
 .skill{
     width: 100%;
@@ -110,7 +132,7 @@ img{
     background-color: rgb(32, 93, 247);
 }
 .second{
-    width: 90%;
+    width: 99%;
     height: 20px;
     background-color: rgb(248, 109, 39);
     text-align: center;
@@ -154,7 +176,7 @@ img{
     background-color: rgb(32, 93, 247);
 }
 .second4{
-    width: 100%;
+    width: 98%;
     height: 20px;
     background-color: rgb(248, 109, 39);
     text-align: center;
@@ -200,4 +222,24 @@ img{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+}
+
+.project{
+    
+    background-color: rgb(34, 32, 32);
+    height: 350px;
+    padding: 30px;
+}
+.showcase{
+    text-align: center;
+}
+.card-one{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+}
+.first-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
