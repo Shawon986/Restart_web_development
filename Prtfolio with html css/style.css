@@ -4,13 +4,16 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
 }
 .nav-bar{
     width: 100%;
-    background-color: cadetblue;
+    background-color: rgb(50, 58, 59);
     padding: 10px;
+    color: white;
+    position: fixed;
 }
 .nav-item{
     display: flex;
@@ -18,6 +21,10 @@
     justify-content: center;
     gap: 80px;
     font-weight: bold;
+    
+}
+ul a{
+    color: white;
 }
 ul{
     display: flex;
@@ -25,8 +32,36 @@ ul{
     gap: 40px;
     align-items: center;
 }
-span{
+.nav-list a:hover{
+    color: aqua;
+}
+.nav-list a{
+    transition: all .6s ease;
+}
+.home{
+    color: aqua;
+}
+.one{
     color: orange;
     font-size: 40px;
 }
 
+.text-item{
+    color: black;
+}
+.two{
+    color: aqua;
+}
+.three{
+    color: orange;
+    font-size: 40px;
+}
+.main{
+    background-image: url(./Web-Design-Development-Company.png);
+    padding: 100PX;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
