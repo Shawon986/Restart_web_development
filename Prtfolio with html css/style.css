@@ -9,10 +9,13 @@
     
 }
 
-
+i{
+    color: aqua;
+    font-size: larger;
+}
 .nav-bar{
     width: 100%;
-    background-color: rgb(28, 30, 30);
+    background-color: rgb(53, 56, 56);
     padding: 10px;
     color: white;
     position: fixed;
@@ -235,11 +238,24 @@ img{
 }
 .card-one{
     width: 250px;
-    height: 250px;
+    height: 280px;
     background-color: white;
+    
+}
+.card-one:hover{
+    opacity: 0.7;
+    transition: 0.6s;
+    box-shadow: 15px 8px rgb(114, 120, 120);
+    
+    
 }
 .first-card{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
+}
+.card-img1{
+    width: 250px;
+    height: 280px;
 }
