@@ -219,12 +219,14 @@ img{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    text-align: center;
 }
 .right{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    text-align: center;
 }
 
 .project{
@@ -237,9 +239,10 @@ img{
     text-align: center;
 }
 .card-one{
-    width: 250px;
-    height: 280px;
+    width: 259px;
+    height: 289px;
     background-color: white;
+    border: 4px solid aqua;
     
 }
 .card-one:hover{
@@ -303,6 +306,6 @@ img{
 .service-item1:hover{
     background-color: black;
     transition: 0.8s;
-    color: rgb(238, 230, 4);
+    color: rgb(62, 209, 163);
     box-shadow: 10px 10px white;
 }
