@@ -13,8 +13,8 @@ function getWeather() {
   fetch(currentWeatherUrl)
       .then(response => response.json())
       .then(data => {
-          displayWeather(data);
-      })
+          displayWeather(data);   
+      })   
       .catch(error => {
           console.error('Error fetching current weather data:', error);
           alert('Error fetching current weather data. Please try again.');
