@@ -54,8 +54,11 @@
 a{
     text-decoration: none;
     color: black;
-    border: 1px solid black;
     padding: 5px;
     background-color: rgb(152, 224, 224);
     border-radius: 5px;
+}
+.button{
+    background-color: rgb(46, 150, 241);
+    color: white;
 }
