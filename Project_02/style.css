@@ -5,11 +5,12 @@
     font-family: sans-serif;
 }
 body{
-    background-image: url(./High_resolution_wallpaper_background_ID_77701602489.webp);
+    /* background-image: url(./High_resolution_wallpaper_background_ID_77701602489.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100%; */
     padding: 20px;
+    background-image: linear-gradient(to left, rgb(112, 242, 249) , rgb(24, 49, 211));
     
     
     
@@ -21,6 +22,9 @@ a{
     
     
 }
+.text{
+    font-size: 60px;
+}
 .menu{
     display: flex;
     gap: 20px;
@@ -31,6 +35,12 @@ a{
 .nav{
     display: flex;
     justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    align-items: center;
+    position: sticky;
 }
 input{
     height: 30px;
@@ -56,8 +66,10 @@ span:hover{
     color: white;
     margin-top: 200px;
     margin-left: 100px;
-    line-height: 40px;
-    
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
     
 }
@@ -104,5 +116,12 @@ i{
 .media{
     display: flex;
     justify-content: end;
+}
+.side_img{
+    height: 250px;
+    width: 350px;
+}
+.castle{
+    width: 100%;
 }
 
