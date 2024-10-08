@@ -87,13 +87,22 @@ i{
     margin-top: 40px;
     color: white;
     font-size: xx-large;
-    
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 4px;
 }
 .social{
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: end;
     flex-direction: column;
     
 }
-
+.media{
+    display: flex;
+    justify-content: end;
+}
 
