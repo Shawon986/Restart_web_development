@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="registration_form">
+        <div class="title">Registration</div>
+        <form>
+            <div class="user_details">
+                <div class="input_field">
+                    <span>Full name</span>
+                    <input type="text" placeholder="Type your name" required>
+                </div>
+                <div class="input_field">
+                    <span>Username</span>
+                    <input type="text" placeholder="Type your username" required>
+                </div>
+                <div class="input_field">
+                    <span>Email</span>
+                    <input type="email" placeholder="Type your email" required>
+                </div>
+                <div class="input_field">
+                    <span>Phone number</span>
+                    <input type="number" placeholder="Type your number" required>
+                </div>
+                <div class="input_field">
+                    <span>Password</span>
+                    <input type="password" placeholder="Type your password" required>
+                </div>
+            </div>
+            <div class="gender_details">
+                <span class="gen_title">Gender</span>
+
+                <div class="category">
+                    <label for="">
+                        <input type="radio" name="gender" id="gender">
+                        <span>Male</span>
+                    </label>
+                    <label for="">
+                        <input type="radio" name="gender" id="gender">
+                        <span>Female</span>
+                    </label>
+                    <label for="">
+                        <input type="radio" name="gender" id="gender">
+                        <span>Prefer not to say</span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+            
+        </form>
+    </div>
 </body>
 </html>

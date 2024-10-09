@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 10px;
+}
+.registration_form{
+    background-color: white;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px;
+}
