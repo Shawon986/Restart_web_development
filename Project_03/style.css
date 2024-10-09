@@ -12,10 +12,59 @@ body{
     justify-content: center;
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
     padding: 10px;
+    color: white;
 }
 .registration_form{
     background-color: white;
     max-width: 700px;
     width: 100%;
     padding: 25px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #edc638, #aa22ee);
+    box-shadow: 10px 10px 10px 0.1px rgb(213, 192, 202);
+}
+.title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+input{
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    padding: 3px;
+}
+.registration_form form .user_details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+form .user_details .input_field{
+    width: calc(100% / 2 - 20px);
+    font-weight: 700;
+}
+.user_details .input_field input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.gen_title{
+    font-weight: 700;
+}
+.category{
+    margin-bottom: 25px;
+}
+
+.buttons{
+    padding: 10px;
+    width: 90px;
+    background-color: #3da9f1;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
 }
