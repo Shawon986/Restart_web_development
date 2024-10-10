@@ -1,0 +1,97 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 25px; */
+    background-image: linear-gradient(to left, rgb(41, 157, 168) , rgba(0, 0, 0, 0.626));
+    height: 70px;
+    width: 90%;
+    padding: 15px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0.1px rgb(1, 22, 24);
+    
+}
+body{
+    background-image: linear-gradient(to left, rgb(21, 220, 246) , rgb(67, 162, 251));
+}
+.nav_item .item_list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-weight: bold;
+    
+}
+.Home{
+    border-bottom: 2px solid aqua;
+    
+}
+.first{
+    color: aqua;
+}
+.logo{
+    color: rgb(57, 228, 247);
+    font-size: 35px;
+    border-right: 3px solid rgb(255, 123, 0);
+    border-bottom: 2px solid rgb(255, 123, 0);
+    padding: 5px;
+    border-radius: 10px;
+}
+.brand_name{
+    font-size: 15px;
+    color: rgb(25, 248, 244);
+    font-weight: bold;
+    
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(249, 144, 25);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.hero_img{
+    height: 500px;
+    width: 550px;
+    margin-top: 130px;
+}
+.image{
+    width: 100%;
+}
+.hero_sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero_text{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Permanent Marker", cursive;
+}
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
