@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 25px; */
+    padding: 25px;
     background-image: linear-gradient(to left, rgb(41, 157, 168) , rgba(0, 0, 0, 0.626));
     height: 70px;
     width: 90%;
@@ -24,7 +24,7 @@
 }
 body{
     background-image: linear-gradient(to left, rgb(21, 220, 246) , rgb(67, 162, 251));
-    height: 100vh;
+    
     
     
 }
@@ -57,12 +57,7 @@ a{
 .lgo{
     width: 100%;
 }
-.brand_name{
-    font-size: 15px;
-    color: rgb(25, 248, 244);
-    font-weight: bold;
-    margin-left: -15px;
-}
+
 .btn{
     width: 80px;
     height: 30px;
@@ -116,7 +111,7 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    margin-bottom: 50px;
     
   }
   .mid_sec a{
@@ -128,9 +123,8 @@ a{
     flex-direction: column;
     align-items: end;
     padding: 10px;
-    margin-top: 50px;
     gap: 20px;
-    margin-bottom: -100px;
+    
   }
   
   .side_bar i{
@@ -147,13 +141,101 @@ a{
   }
 
    .footer{
-    height: 200px;
     width: 80%;
     margin: auto;
-    background-color: black;
-    margin-top: 50px;
+    margin-bottom: 50px;
+    
     
   } 
   .banner{
     width: 100%;
+    
   }
+
+  .bottom_sec{
+    height: 300px;
+    width: 70%;
+    background-image: linear-gradient(to left, rgb(165, 165, 165) , rgba(69, 68, 68, 0.626));
+    margin: auto;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 0.3px white;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    position: relative;
+  }
+  .social_link {
+    display: flex;
+    gap: 20px;
+  }
+
+  .social_link i{
+    font-size: 25px;
+    background-color: black;
+    padding: 7px;
+    border-radius: 50%;
+    color: aqua;
+  }
+  
+  .details_link a{
+    display: flex;
+  }
+  .details_link{
+    margin-top: 25px;
+  }
+  .heads{
+    color: rgb(247, 168, 21);
+    border-bottom: 2px solid white;
+  }
+  .bottom_sec .bottom_details2 a{
+    display: flex;
+    
+  }
+  .heads2{
+    border-bottom: 2px solid white;
+    color: rgb(251, 178, 41);
+  }
+  .details_link2{
+    margin-top: 25px;
+  }
+
+  .bottom_details1{
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    align-items: center;
+  }
+
+  .social_media_links{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .social_media_links i{
+    font-size: 25px;
+    background-color: black;
+    padding: 7px;
+    border-radius: 50%;
+    color: aqua;
+  }
+
+  .search_bar{
+    position: absolute;
+    right: 160px;
+    bottom:35px;
+  }
+  input{
+    border: none;
+    padding: 8px;
+    border-radius: 7px;
+    width: 200px;
+  }
+  label{
+    font-weight: bold;
+    color: aqua;
+  }
+
+  
+  
