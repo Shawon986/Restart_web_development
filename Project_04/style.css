@@ -24,6 +24,7 @@
 }
 body{
     background-image: linear-gradient(to left, rgb(21, 220, 246) , rgb(67, 162, 251));
+    height: 100vh;
 }
 .nav_item .item_list {
     display: flex;
@@ -45,23 +46,25 @@ a{
     color: aqua;
 }
 .logo{
-    color: rgb(57, 228, 247);
-    font-size: 35px;
-    border-right: 3px solid rgb(255, 123, 0);
-    border-bottom: 2px solid rgb(255, 123, 0);
-    padding: 5px;
-    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    
+}
+.lgo{
+    width: 100%;
 }
 .brand_name{
     font-size: 15px;
     color: rgb(25, 248, 244);
     font-weight: bold;
-    
+    margin-left: -15px;
 }
 .btn{
     width: 80px;
     height: 30px;
-    background-color: rgb(249, 144, 25);
+    background-color: rgb(249, 197, 25);
     border: none;
     border-radius: 4px;
     color: white;
@@ -82,9 +85,16 @@ a{
     justify-content: space-around;
 }
 
+.logo_text{
+    color: rgb(241, 200, 35);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Permanent Marker", cursive;
+    margin-left: -15px;
+}
 .hero_text{
     color: white;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     font-family: "Permanent Marker", cursive;
 }
@@ -92,6 +102,21 @@ a{
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
+    
   }
-  
+  .logo_name{
+    font-weight: bold;
+  }
+  .mid_sec{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .mid_sec a{
+    border-bottom: 1px solid white;
+  }
   
