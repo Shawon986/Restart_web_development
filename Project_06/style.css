@@ -68,17 +68,52 @@ span{
 .home p{
     line-height: 1.2;
 }
-.btns a{
-    margin: 0 10px 0 0;
-    font-weight: 600;
-    text-decoration: none;
-    color: aqua;
-    border: 1px solid aqua;
-    padding: 7px;
-    border-radius: 4px;
-}
+
 .btns a:hover {
-    background-color: aqua;
-    color: rgb(0, 0, 0);
+    
+    color: white;
+    background: rgb(234, 0, 255);
 
 }
+ .home_content .btns{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 40px;
+ }
+
+ .btns a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 100%;
+    font-size: 19px;
+    letter-spacing: 1;
+    color: black;
+    font-weight: 600;
+    background-color: aqua;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+ }
+
+ .btns a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #081b29;
+    z-index: -1;
+    transition: 0.5s;
+ }
+ .btns a:hover::before{
+    width: 100%;
+    
+ }
+
+
