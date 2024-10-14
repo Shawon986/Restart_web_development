@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    background-color: #081b29;
+}
 
 .header{
     position: fixed;
@@ -12,7 +15,7 @@
     left: 0;
     height: 45px;
     width: 100%;
-    background-color: rgb(33, 33, 33);
+    background-color: yellowgreen;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,4 +35,40 @@ span{
 .navbar a {
     color: white;
     margin-left: 35px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: aqua;
+}
+
+
+.home_content{
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    max-width: 800px;
+}
+
+.home, h1 ,h3 ,p{
+    margin-bottom: 20px;
+    
+}
+.home h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.home h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: aqua;
+}
+.btns a{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    background-color: yellowgreen;
+    padding: 7px;
+    border-radius: 4px;
 }
