@@ -8,6 +8,10 @@
 }
 body{
     background-color: #081b29;
+    background-image: url(./photo-1478760329108-5c3ed9d495a0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .header{
