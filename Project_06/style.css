@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,8 +10,17 @@
     font-family: sans-serif;
     
 }
+
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 42px;
+  }
+
 body{
-    background-color: #081b29;
+    /* background-color: #081b29; */
     background-image: url(./photo-1478760329108-5c3ed9d495a0.jpg);
     background-repeat: no-repeat;
     background-position: center;
