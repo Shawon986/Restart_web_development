@@ -168,9 +168,9 @@ span{
 
 .hero_img{
     height: 500px;
-    width: 500px;
+    width: 600px;
     position: absolute;
-    top: 100px;
+    top: 60px;
     right: 80px;
 }
 .hero{
