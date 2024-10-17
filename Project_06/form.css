@@ -118,3 +118,29 @@ span{
 .navbar a:hover {
     color: aqua;
 }
+.social{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    display: flex;
+    height: 50px;
+    width: 170px;
+    justify-content: space-between;
+ }
+ .social a{
+    border: 2px solid aqua;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: aqua;
+    font-size: 22px;
+ }
+ .social a:hover{
+    background-color: black;
+    color: aqua;
+    transition: 0.5s;
+ }
