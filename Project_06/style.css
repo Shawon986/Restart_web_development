@@ -70,6 +70,7 @@ span{
     align-items: center;
     padding: 0 10%;
     max-width: 800px;
+    z-index: 1000000000;
 }
 
 .home, h1 ,h3 ,p{
@@ -172,6 +173,7 @@ span{
     position: absolute;
     top: 60px;
     right: 80px;
+    z-index: -10000000;
 }
 .hero{
     width: 100%;
