@@ -42,6 +42,23 @@ body{
     
    
 }
+.cloud{
+    font-size: 24px;
+    border: 2px solid aqua;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: black;
+    
+}
+.navbar .cloud{
+    color: aqua;
+}
+.cloud:hover{
+    background-color: rgb(25, 73, 75);
+    
+}
 
 .logo{
     position: relative;
