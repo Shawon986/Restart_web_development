@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 42px;
+  }
+
+  body{
+    /* background-color: #081b29; */
+    background-image: url(./photo-1478760329108-5c3ed9d495a0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 10%;
+    z-index: 100;
+    
+   
+}
+.cloud{
+    font-size: 24px;
+    border: 2px solid aqua;
+    /* box-shadow: 0 0 50px 15px #f90dc2; */
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar .cloud{
+    color: aqua;
+}
+.cloud:hover{
+    background-color: rgb(25, 73, 75);
+    
+}
+
+.logo{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+span{
+    color: aqua;
+    font-size: xx-large;
+}
+.navbar a {
+    color: white;
+    margin-left: 35px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: aqua;
+}
+
+.social{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    display: flex;
+    height: 50px;
+    width: 170px;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .social a{
+    border: 2px solid aqua;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: aqua;
+    font-size: 22px;
+ }
+ .social a:hover{
+    background-color: black;
+    color: aqua;
+    transition: 0.5s;
+ }
