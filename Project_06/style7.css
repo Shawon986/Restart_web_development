@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+body {
+    background-image: url(./photo-1478760329108-5c3ed9d495a0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 10%;
+    z-index: 100;
+    
+   
+}
+
+
+/* .logo{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+} */
+span{
+    color: aqua;
+    font-size: xx-large;
+}
+.second{
+    color: white;
+    font-size: 20px;
+}
+.navbar a {
+    color: white;
+    margin-left: 35px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: aqua;
+}
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 42px;
+  }
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h2, label, p {
+    color: #fff;
+    margin: 8px 0;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+button {
+    background: #000000;
+    color: rgb(0, 238, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: aqua;
+    color: black;
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px; 
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #fff;
+    margin-top: 10px;
+}
+.social{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    display: flex;
+    height: 50px;
+    width: 170px;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .social a{
+    border: 2px solid aqua;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: aqua;
+    font-size: 22px;
+ }
+ .social a:hover{
+    background-color: black;
+    color: aqua;
+    transition: 0.5s;
+ }

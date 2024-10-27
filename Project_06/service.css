@@ -176,6 +176,7 @@ span{
     font-weight: bold;
     margin-top: 10px;
     cursor: pointer;
+    border-top: 1.5px solid black;
  }
 
  .contact_btn:hover{

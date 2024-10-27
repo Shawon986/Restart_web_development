@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style7.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <a class="logo dancing-script" href="#"><span class="dancing-script">S</span><span class="second">hawon</span>
+        </a>
+
+        <nav class="navbar">
+            <a style="color: aqua" class="first" href="./index.html">Home</a>
+            <a href="#">About</a>
+            <a href="./service.html">Services</a>
+            <a href="#">Projects</a>
+            <a href="./form.html">Contact</a>
+           
+        </nav>
+    </header>
+    <div id="weather-container">
+        <h2>Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city">
+        <button onclick="getWeather()">Search</button>
+
+        <img id="weather-icon" alt="Weather Icon">
+ 
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+
+        <div id="hourly-forecast"></div>
+    </div>
+
+    <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        
+    </div>
+    <script src="./script7.js"></script>
+</body>
+</html>
