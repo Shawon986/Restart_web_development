@@ -85,6 +85,7 @@ span{
 .social{
     position: absolute;
     bottom: 40px;
+    left: 150px;
     display: flex;
     height: 50px;
     width: 170px;
@@ -106,4 +107,130 @@ span{
     background-color: black;
     color: aqua;
     transition: 0.5s;
+ }
+
+
+ .hero_img{
+    width: 85%;
+    height: 100vh;
+    margin: auto;
+    
+ }
+ .hero_img img{
+    width: 100%;
+    height: 99%;
+    opacity: .3;
+ }
+
+ .home_content{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    max-width: 800px;
+    z-index: 1000000000;
+}
+
+.home, h1 ,h3 ,p{
+    margin-bottom: 20px;
+}
+.home h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    
+}
+.home h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: aqua;
+}
+.home p{
+    position: relative;
+    line-height: 1.2;
+}
+
+.btns a:hover {
+    
+    color: white;
+    background: rgb(234, 0, 255);
+
+}
+ .home_content .btns{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 40px;
+ }
+
+ .btns a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 100%;
+    font-size: 19px;
+    letter-spacing: 1;
+    color: black;
+    font-weight: 600;
+    background-color: aqua;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+ }
+
+ .btns a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #081b29;
+    z-index: -1;
+    transition: 0.5s;
+ }
+ .btns a:hover::before{
+    width: 100%;
+    
+ }
+
+ .skills{
+    position: absolute;
+    top: 33%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+ }
+ .one{
+    width: 300px;
+    height: 25px;
+    background-color: rgb(250, 202, 9);
+ }
+
+ .inner_one{
+    width: 95%;
+    height: 25px;
+    background-color: aqua;    align-content: center;
+    font-weight: bold;
+    padding: 5px;
+ }
+ .two{
+    width: 80%;
+ }
+ .three{
+    width: 60%;
+ }
+ .four{
+    width: 85%;
+ }
+ .five{
+    width: 90%;
  }
