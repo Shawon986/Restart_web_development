@@ -234,3 +234,23 @@ span{
  .five{
     width: 90%;
  }
+
+ .skills a .github{
+    text-decoration: none;
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    background-color: rgb(103, 102, 102);
+    color: aqua;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+ }
+ .skills a :hover{
+    background-color: aqua;
+    color: rgb(48, 48, 48);
+    transition: .5s;
+    cursor: pointer;
+ }
+ 
