@@ -132,23 +132,32 @@ margin-bottom: 15px;
 color: #fff;
 font-weight: 300;
 }
-.contactInfo.language .percent
-{
-    position: relative;
+.percent_one{
     width: 100%;
-    height: 6px;
-    background: #f2c70a;
-    display: block;
-    margin-top: 5px;
+    height: 10px;
+    background-color: rgb(148, 147, 147);
 }
-.contactInfo.language .percent div
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #f9cd0c;
+.one{
+    width: 100%;
+    height: 10px;
+    background-color: #ec7a09;
 }
+.two{
+    width: 80%;
+    height: 10px;
+    background-color: #ec7a09;
+}
+.three{
+    width: 70%;
+    height: 10px;
+    background-color: #ec7a09;
+}
+.four{
+    width: 40%;
+    height: 10px;
+    background-color: #ec7a09;
+}
+
 .container .right_Side
 {
     position: relative;
@@ -203,7 +212,7 @@ p
     display:grid;
     grid-template-columns: 150px 1fr;
     justify-content: center;
-align-items: center;
+    align-items: center;
 }
 .skills .box h4
 {
