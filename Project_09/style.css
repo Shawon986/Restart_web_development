@@ -39,7 +39,25 @@ body {
     top: 40%;
     width: 700px;
     height: 450px;
-    background: linear-gradient(90deg,#32463a,#000000);
+    background: linear-gradient(90deg,#cfac1f,#000000);
+    background-position: center;
+    background-size: cover;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+    box-shadow: 0 0 10px white;
+  }
+  .slider-thumb3::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 5%;
+    width: 700px;
+    height: 450px;
+    background: linear-gradient(90deg,#4b6644,#000000);
     background-position: center;
     background-size: cover;
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
@@ -184,4 +202,10 @@ ul li:hover{
       border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
       transform: translate3d(0,-3px,0) rotateZ(0.01deg);
     }
+  }
+
+  @media only screen and (max-width:700px)  {
+        .nav_bar ul{
+            display: none;
+        }
   }
