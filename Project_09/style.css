@@ -18,7 +18,7 @@ body {
   .slider-thumb::before {
     position: absolute;
     content: "";
-    left: 3%;
+    left: 7%;
     top: 20%;
     width: 700px;
     height: 450px;
@@ -39,7 +39,7 @@ body {
     top: 40%;
     width: 700px;
     height: 450px;
-    background: linear-gradient(90deg,#516a4e,#000000);
+    background: linear-gradient(90deg,#32463a,#000000);
     background-position: center;
     background-size: cover;
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
@@ -50,23 +50,7 @@ body {
     -webkit-animation: sliderShape 5s linear infinite;
     box-shadow: 0 0 10px white;
   }
-  @keyframes sliderShape{
-    0%,100%{
-    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-      transform: translate3d(0,0,0) rotateZ(0.01deg);
-    }
-    34%{
-        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
-    }
-    50%{
-      transform: translate3d(0,0,0) rotateZ(0.01deg);
-    }
-    67%{
-      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
-      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
-    }
-  }
+  
 .nav_bar{
     position: fixed;
     top: 0;
@@ -75,7 +59,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background: rgb(62, 69, 62);
+    background: rgb(36, 36, 36);
     color: white;
     padding: 0 3%;
     z-index: 100;
@@ -111,9 +95,9 @@ ul li:hover{
     display: flex;
     align-items: center;
     height: 100vh;
-    padding-left: 3%;
+    padding-left: 9%;
     color: white;
-    justify-content: space-between;
+    justify-content: start;
 }
 .home_info h1{
     font-size: 4rem;
@@ -182,3 +166,22 @@ ul li:hover{
     /* transition: 0.5s; */
     box-shadow: 0 0 10px white;
 }
+
+
+@keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
