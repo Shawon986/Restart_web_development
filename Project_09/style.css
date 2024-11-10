@@ -54,7 +54,7 @@ body {
   .slider-thumb3::before {
     position: absolute;
     content: "";
-    left: 50%;
+    left: 30%;
     top: 5%;
     width: 700px;
     height: 450px;
