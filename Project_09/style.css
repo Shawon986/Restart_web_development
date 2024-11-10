@@ -81,6 +81,7 @@ body {
     color: white;
     padding: 0 3%;
     z-index: 100;
+    opacity: .8;
 }
 a{
     text-decoration: none;
@@ -89,6 +90,7 @@ a{
 .logo{
     font-size: 2rem;
     font-weight: 600;
+    color: white;
 }
 span{
     font-size: 3rem;
@@ -102,6 +104,7 @@ ul li{
     display: inline-flex;
     margin-left: 35px;
     font-weight: 600;
+    color: white;
 }
 ul li:hover{
     color: yellowgreen;
@@ -116,6 +119,10 @@ ul li:hover{
     padding-left: 9%;
     color: white;
     justify-content: start;
+}
+.second{
+    color: yellowgreen;
+    font-size: 7rem;
 }
 .home_info h1{
     font-size: 4rem;
@@ -159,7 +166,8 @@ ul li:hover{
     background-color: black;
 }
 .bxl-github{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 .bxl-whatsapp{
     color: rgb(169, 245, 15);
@@ -176,15 +184,127 @@ ul li:hover{
     border-radius: 5px;
     font-weight: 500;
     margin-top: 20px;
-    
+    color: white;
 }
 .btn:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color:#6cb924;
-    /* transition: 0.5s; */
     box-shadow: 0 0 10px white;
 }
+.about{
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    padding: 20px 5%;
+    background-color: rgb(52, 85, 85);
 
+}
+.heading{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 60%;
+    padding: 3px;
+    background-color: rgb(253, 196, 11);
+    margin-bottom: 10px;
+
+}
+.image .profile_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60%;
+    border: 3px solid rgb(255, 255, 255);
+}
+.profile_card{
+    max-width: 370px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(246, 244, 241);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.profile_card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: rgb(64, 96, 85);
+}
+.profile_card .text{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+.text span{
+    font-size: 1rem;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+    
+}
+.buttons .bx{
+    background-color: rgb(8, 101, 159);
+    height: 20px;
+    width: 20px;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btns{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.button{
+    height: 30px;
+    width: 80px;
+    background-color: rgb(76, 165, 248);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(35, 97, 242);
+    transition: 0.5s;
+}
+.profile_img:hover{
+    border: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.6s;
+}
+a:hover{
+    cursor: pointer;
+}
 
 @keyframes sliderShape{
     0%,100%{
