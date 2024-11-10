@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     height: 100vh;
@@ -192,11 +193,10 @@ ul li:hover{
     box-shadow: 0 0 10px white;
 }
 .about{
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 500px;
     padding: 20px 5%;
-    background-color: rgb(52, 85, 85);
 
 }
 .heading{
@@ -305,7 +305,90 @@ a{
 a:hover{
     cursor: pointer;
 }
+.right{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
 
+.skills h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.skills h4{
+    color: white;
+    
+}
+.outer_one{
+    width: 220px;
+    height: 5px;
+    background-color: rgb(245, 173, 19);
+}
+.inside_one{
+    width: 90%;
+    height: 5px;
+    background-color: rgb(156, 175, 175);
+}
+.inside_two{
+    width: 70%;
+    height: 5px;
+    background-color: rgb(156, 175, 175);
+}
+.inside_three{
+    width: 60%;
+    height: 5px;
+    background-color: rgb(156, 175, 175);
+}
+.inside_five{
+    width: 75%;
+    height: 5px;
+    background-color: rgb(156, 175, 175);
+}
+.percent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+.about_me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.about_me h5{
+    color: white;
+    margin-bottom: 40px;
+}
+.about_me h4{
+    color: white;
+    text-align: center;
+}
+.about_me .outer_one{
+    margin-bottom: 10px;
+}
+.l_heading{
+    border-bottom: 2px solid white;
+    width: 110px;
+
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.address h4{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.bx-map{
+    color: rgb(246, 19, 19);
+    font-size: 2em;
+}
 @keyframes sliderShape{
     0%,100%{
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
@@ -327,5 +410,9 @@ a:hover{
   @media only screen and (max-width:700px)  {
         .nav_bar ul{
             display: none;
+        }
+        .right{
+            display: grid;
+            grid-template-columns: 1fr;
         }
   }
