@@ -407,6 +407,7 @@ a:hover{
 .project_showcase{
     color: white;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .project_showcase h4{
@@ -419,6 +420,8 @@ a:hover{
     width: 300px;
     height: 350px;
     background-color: #909d8f;
+    border-radius: 10px;
+    
 }
 .project_two{
     padding: 15px;
@@ -426,6 +429,8 @@ a:hover{
     height: 350px;
     background-color: #909d8f;
     text-align: center;
+    border-radius: 10px;
+
 
 }
 .project_three{
@@ -434,15 +439,26 @@ a:hover{
     height: 350px;
     background-color: #909d8f;
     text-align: center;
+    border-radius: 10px;
+
 
 }
 .img_one{
     width: 270px;
     height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .img_one img{
     width: 100%;
 }
+.bxl-github{
+    border: 2px solid rgb(244, 154, 10);
+    border-radius: 50%;
+    font-size: 1.6rem;
+}
+
 @keyframes sliderShape{
     0%,100%{
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
