@@ -12,7 +12,7 @@
 }
 body {
     height: 100vh;
-     background: linear-gradient(90deg,#516a4e,#000000);
+    background: linear-gradient(90deg,#516a4e,#000000);
   
   }
   
@@ -199,6 +199,10 @@ ul li:hover{
     padding: 20px 5%;
 
 }
+.highlight{
+    font-size: 1.6rem;
+    color: rgb(255, 188, 6);
+}
 .heading{
     text-align: center;
     color: white;
@@ -323,27 +327,32 @@ a:hover{
 .outer_one{
     width: 220px;
     height: 5px;
-    background-color: rgb(245, 173, 19);
+    background-color: rgb(140, 138, 134);
 }
 .inside_one{
-    width: 90%;
+    width: 95%;
     height: 5px;
-    background-color: rgb(156, 175, 175);
+    background-color: yellowgreen;
 }
 .inside_two{
     width: 70%;
     height: 5px;
-    background-color: rgb(156, 175, 175);
+    background-color: yellowgreen;
 }
 .inside_three{
     width: 60%;
     height: 5px;
-    background-color: rgb(156, 175, 175);
+    background-color: yellowgreen;
 }
 .inside_five{
     width: 75%;
     height: 5px;
-    background-color: rgb(156, 175, 175);
+    background-color: yellowgreen;
+}
+.inside_six{
+    width: 40%;
+    height: 5px;
+    background-color: yellowgreen;
 }
 .percent{
     display: flex;
@@ -371,7 +380,7 @@ a:hover{
 }
 .l_heading{
     border-bottom: 2px solid white;
-    width: 110px;
+    width: 100px;
 
 }
 .skills{
@@ -388,6 +397,13 @@ a:hover{
 .bx-map{
     color: rgb(246, 19, 19);
     font-size: 2em;
+}
+
+.projects{
+    margin-top: 60px;
+    width: 100%;
+    height: 500px;
+    padding: 30px 5%;
 }
 @keyframes sliderShape{
     0%,100%{
