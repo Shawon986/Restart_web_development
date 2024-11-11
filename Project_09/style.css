@@ -575,9 +575,9 @@ a:hover{
   }
   .web_dev{
     color: white;
-    width: 300px;
-    height: 350px;
-    background-color: #222d30;
+    width: 350px;
+    height: 260px;
+    background: linear-gradient(90deg,#1e303c,#234d3a);
     text-align: center;
     box-shadow: 0 0 20px rgb(0, 0, 0);
     border-radius: 15px;
@@ -586,13 +586,19 @@ a:hover{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid yellowgreen;
   }
   .web_dev h3{
-    color: #f5b402;
+    color: #f2c341;
   }
 .web_dev i{
     font-size: 2.5rem;
     color: yellowgreen;
+}
+.web_dev:hover{
+    background-color: #2f3b3f;
+    box-shadow: 0 0 15px white;
+    transition: .5s;
 }
 
 
@@ -643,6 +649,12 @@ a:hover{
             gap: 20px;
             align-items: center;
         } 
+        .service_item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 45px;
+        }
         
        
   }
