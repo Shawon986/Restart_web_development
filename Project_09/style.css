@@ -733,6 +733,9 @@ a:hover{
 .wrapper{
     z-index: 10000000;
 }
+.full_form .address{
+    display: none;
+}
 #stars {
     z-index: 1000000000;
     width: 1px;
@@ -1179,8 +1182,11 @@ a:hover{
             gap: 65px;
             
         }
-        .address{
+        .skills .address{
             display: none;
+        }
+        .full_form .address{
+            display: initial;
         }
         
        
