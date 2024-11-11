@@ -407,15 +407,15 @@ a:hover{
     width: 100%;
     padding: 30px 5%;
     z-index: 10000;
+  
     
 }
 .project_showcase{
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 80px;
+    gap: 100px;
     place-self: center;
-   
 }
 .project_showcase h4{
     margin-bottom: 15px;
@@ -426,8 +426,8 @@ a:hover{
     text-align: center;
     width: 300px;
     height: 350px;
-    background-color: #808280;
-    border: 1px solid yellowgreen;
+    background: linear-gradient(90deg,#5d502f,#4ea6b5);
+    border: 1px solid aqua;
     border-radius: 10px;
 }
 
@@ -470,7 +470,7 @@ a:hover{
   .wrapper div {
     height: 60px;
     width: 60px;
-    border: 2px solid rgb(6, 236, 244);
+    border: 2px solid rgb(145, 221, 47);
     border-radius: 50px;
     position: absolute;
     top: 10%;
@@ -481,7 +481,7 @@ a:hover{
     height: 10px;
     width: 10px;
     border-radius: 50px;
-    background: rgb(12, 233, 244);
+    background: rgb(163, 165, 165);
     position: absolute;
     top: 20%;
     right: 20%;
@@ -561,6 +561,7 @@ a:hover{
     left: 80%;
     animation: animate 9s linear infinite;
   }
+  
   @keyframes animate {
     0% {
       transform: scale(0) translateY(0) rotate(70deg);
@@ -607,6 +608,7 @@ a:hover{
             gap: 20px;
             align-items: center;
         } 
+        
        
   }
   @media only screen and (max-width:1035px) {
