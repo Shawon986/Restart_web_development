@@ -9,7 +9,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-}
+} 
 body {
     height: 100vh;
     background: linear-gradient(90deg,#516a4e,#000000);
@@ -309,9 +309,9 @@ a{
 a:hover{
     cursor: pointer;
 }
-.right{
+.details{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
 }
 
@@ -359,7 +359,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    text-align: center;
+    
 }
 .about_me{
     display: flex;
@@ -373,7 +373,7 @@ a:hover{
 }
 .about_me h4{
     color: white;
-    text-align: center;
+    
 }
 .about_me .outer_one{
     margin-bottom: 10px;
@@ -403,18 +403,21 @@ a:hover{
     margin-top: 90px;
     width: 100%;
     padding: 30px 5%;
+    
 }
 .project_showcase{
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+    place-self: center;
+   
 }
 .project_showcase h4{
     margin-bottom: 15px;
 }
 
-.project_one{
+.project_card{
     padding: 15px;
     text-align: center;
     width: 300px;
@@ -423,26 +426,7 @@ a:hover{
     border-radius: 10px;
     
 }
-.project_two{
-    padding: 15px;
-    width: 300px;
-    height: 350px;
-    background-color: #909d8f;
-    text-align: center;
-    border-radius: 10px;
 
-
-}
-.project_three{
-    padding: 15px;
-    width: 300px;
-    height: 350px;
-    background-color: #909d8f;
-    text-align: center;
-    border-radius: 10px;
-
-
-}
 .img_one{
     width: 270px;
     height: 150px;
@@ -481,7 +465,7 @@ a:hover{
         .nav_bar ul{
             display: none;
         }
-        .right{
+        .details{
             display: flex;
             flex-direction: column;
             align-items: center;
