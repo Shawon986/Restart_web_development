@@ -1,12 +1,14 @@
 body {
-    background: #8C52FF;
+    background: url(./photo-1478760329108-5c3ed9d495a0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-}
+} 
 
 #weather-container {
     background: rgba(255, 255, 255, 0.3);
@@ -34,8 +36,8 @@ input {
 }
 
 button {
-    background: #debff4;
-    color: white;
+    background: rgb(0, 0, 0);
+    color: aqua;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -46,7 +48,8 @@ button {
 }
 
 button:hover {
-    background: #8b48d7;
+    background: aqua;
+    color: black;
 }
 
 #temp-div p {
