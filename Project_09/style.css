@@ -1200,7 +1200,7 @@ a:hover{
             content: "";
             left: 7%;
             top: 20%;
-            width: 300px;
+            width: 330px;
             height: 450px;
             background: #000000;
             border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
@@ -1217,7 +1217,7 @@ a:hover{
             content: "";
             left: 30%;
             top: 40%;
-            width: 250px;
+            width: 270px;
             height: 350px;
             background: linear-gradient(90deg,#cfac1f,#000000);
             background-position: center;
@@ -1235,8 +1235,8 @@ a:hover{
             content: "";
             left: 30%;
             top: 5%;
-            width: 250px;
-            height: 350px;
+            width: 270px;
+            height: 300px;
             background: linear-gradient(90deg,#4b6644,#000000);
             background-position: center;
             background-size: cover;
