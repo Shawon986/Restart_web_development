@@ -11,8 +11,14 @@ function incrementCount(){
 };
 
 function decrementCount(){
-    count = count - 1 ;
-    counterShow.innerText = count ;
+     
+    if (count<=0){ 
+        alert('Numbers can not be negative') ;
+        return count;
+    }else {
+        count = count - 1 ;
+        counterShow.innerText = count ;
+    }
 }
 
 incrementButton.addEventListener('click', incrementCount);
