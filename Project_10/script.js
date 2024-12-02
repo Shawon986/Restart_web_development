@@ -13,8 +13,6 @@ function incrementCount(){
         counterShow.innerText = count ;
     }
 
-    
-
 };
 
 function decrementCount(){
