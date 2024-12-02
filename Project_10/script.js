@@ -5,7 +5,7 @@ const decrementButton =document.getElementById('decrement');
 
 
 function incrementCount(){
-    if (count>=10){ 
+    if (count>=10){  
         alert('Limit Reached') ;
         return count;
     }else{
