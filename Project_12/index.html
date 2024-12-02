@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body class="flex items-center justify-center min-h-screen ">
-    <div class="bg-slate-400 shadow-lg p-8 rounded-md mx-auto text-center ">
-        <h1 class="text-3xl text-slate-700 ">Grade Calculator</h1>
-        <input id="inputField" type="number" class="w-72 rounded-md p-2 mt-5 "><br>
-        <button id="button" class="bg-blue-500 p-2 rounded-md  text-white mt-5 ">Calculate</button>
-        <div class="mt-5 ">
+    <div class="bg-slate-400 shadow-lg p-8 rounded-md mx-auto text-center flex-col items-center justify-center ">
+
+        <div>
+            <h1 class="text-3xl text-slate-700 ">Grade Calculator</h1>
+        </div>
+        <div>
+            <input id="inputField" type="number" class="w-72 rounded-md p-2 mt-5 ">
+        </div>
+        <div>
+            <button id="button" class="bg-blue-500 p-2 rounded-md  text-white mt-5 ">Calculate</button>
+        </div>
+        
+        <div class="mt-5 bg-slate-200 px-5 inline-block " >
             <p id="display"></p>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
