@@ -62,7 +62,7 @@ body{
     justify-content: space-around;
 }
 .title h2{
-    color: rgb(163, 160, 160);
+    color: rgb(205, 202, 202);
 }
 .image-div{
     height: 100px;
@@ -97,4 +97,59 @@ body{
     color: black;
     background-color: white;
     cursor: pointer;
+}
+.services{
+    padding: 15px;
+}
+.service-item{
+    background-color: #28282b;
+    height: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(205, 202, 202);
+    text-align: center;
+}
+.service-item h1{
+    margin-bottom: 20px;
+}
+.one{
+    width: 220px;
+    height: 250px;
+    background-color: #9AA6B2;
+    position: relative;
+}
+.two{
+    position: absolute;
+    top: 0;
+    width: 220px;
+    height: 250px;
+    background-color: black;
+    opacity: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.two:hover{
+    opacity: 1;
+}
+
+.one img{
+    width: 100%;
+    height: 250px;
+
+}
+i{
+    font-size: 82px;
+    color: rgb(5, 117, 198);
+}
+.dr-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.right img:hover{
+    width: 400px;
 }
