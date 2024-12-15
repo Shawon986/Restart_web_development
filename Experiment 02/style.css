@@ -34,7 +34,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
     background-color: #212121;
     margin-bottom: 20px;
 }
@@ -166,4 +166,60 @@ i{
     
     transform: scale(1.5,1.5);
 
+}
+.float{
+    padding: 20px;
+    background-color: #28282b;
+    width: 98%;
+    margin: auto;
+    border-radius: 10px;
+    
+    
+
+}
+.float h1{
+    text-align: center;
+    color: #F8FAFC;
+    margin-bottom: 40px;
+    
+}
+.prothom{
+    height: 450px;
+    width: 550px;
+   float: left;
+}
+.prothom img{
+    width: 100%;
+    
+}
+
+
+.container {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.row {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.image-box {
+    float: left; 
+    width: 42%; 
+    margin: 4%; 
+    box-sizing: border-box;
+}
+
+.image-box img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+.image-box:hover{
+    transform: scale(.8,.8);
+
+}
+.container h1{
+    text-align: center;
 }
