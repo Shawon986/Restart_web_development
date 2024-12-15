@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    transition: .5s;
+}
+
+.logo{
+    font-weight: bold;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.navbar{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgb(44, 151, 151);
+}
+
+.navbar ul li a{
+    color: rgb(228, 228, 228);
+    
+}
+.nav-item ul{
+    display: flex;
+    gap: 30px;
+}
+.nav-item ul :hover{
+    color: rgb(59, 59, 59);
+}
