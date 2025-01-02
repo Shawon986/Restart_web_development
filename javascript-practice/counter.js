@@ -7,6 +7,11 @@ const btn02 = document.getElementById('second');
 let count = 0;
 
 function increase(){
+    if(count===10){
+        displayArea.innerText = 'you have reached the limit';
+        return count;
+
+    }
     count = count+ 1;
     displayArea.innerText = count;
     
