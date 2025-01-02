@@ -12,6 +12,12 @@ function increase(){
     
 }
 
+function decrease(){
+    count = count - 1;
+    displayArea.innerText = count;
+}
+
 btn01.addEventListener('click', increase);
+btn02.addEventListener('click', decrease);
 
 
