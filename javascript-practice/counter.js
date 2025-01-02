@@ -8,7 +8,7 @@ let count = 0;
 
 function increase(){
     if(count===10){
-        displayArea.innerText = 'you have reached the limit';
+        displayArea.innerText = 'You have reached the limit';
         return count;
 
     }
@@ -18,6 +18,11 @@ function increase(){
 }
 
 function decrease(){
+    if(count<=0){
+        displayArea.innerText = 'Can not be negative';
+        return count;
+
+    }
     count = count - 1;
     displayArea.innerText = count;
 }
