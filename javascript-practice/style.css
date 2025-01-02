@@ -27,6 +27,7 @@ button{
     width: 50px;
     height: 35px;
     font-size: larger;
+    font-weight: bold;
 }
 .one{
     background-color: rgb(6, 223, 6);
