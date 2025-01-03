@@ -2,6 +2,10 @@ const firstValue = document.getElementById('valueOne');
 const secondValue = document.getElementById('valueTwo');
 const compareButton = document.getElementById('first');
 const resultShow = document.getElementById('showResult');
+const resetButton = document.getElementById('second');
+
+
+
 
 
 function compare(){
@@ -18,5 +22,13 @@ function compare(){
     }
 
 }
+
+function reset(){
+    firstValue.value = '';
+    secondValue.value = '';
+    resultShow.innerHTML= '';
+}
+
+resetButton.addEventListener('click', reset);
 
 compareButton.addEventListener('click',compare);
