@@ -4,9 +4,16 @@ const resetButton = document.getElementById('second');
 const displayResult = document.getElementById('showResult');
 
 
-calculateButton.addEventListener('click', calculateResult);
-
-function calculateResult(){
+calculateButton.addEventListener('click',function(){
+    
+    
+    if (inputValue.value === ''){
+        displayResult.innerText='Number can not be empty';
+        return;
+    }
+        
+    
+    
     const mark = parseFloat(inputValue.value);
     if(mark>=80 && mark<=100){
         displayResult.innerText = 'A+';
@@ -22,4 +29,15 @@ function calculateResult(){
     else{
         displayResult.innerText = 'Fail';
     }
-}
+    
+    
+} );
+
+
+
+
+
+resetButton.addEventListener('click', function(){
+    inputValue.value = 0;
+    displayResult.innerText = '';
+})
