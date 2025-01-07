@@ -11,28 +11,30 @@ calculateButton.addEventListener('click',function(){
         displayResult.innerText='Invalid number';
         return;
     }
-        
-    
     
     const mark = parseFloat(inputValue.value);
-    if(mark>=80 && mark<=100){
-        displayResult.innerText = 'A+';
-    } else if(mark>=70 && mark<=79){
-        displayResult.innerText = 'A';
-    } else if(mark>=60 && mark<=69){
-        displayResult.innerText = 'A-';
-    } else if(mark>=50 && mark<=59){
-        displayResult.innerText = 'B';
-    } else if(mark>=40 && mark<=49){
-        displayResult.innerText = 'C';
-    } 
-    else{
-        displayResult.innerText = 'Fail';
-    }
     
+    const number = calculate(mark);
+
+    displayResult.innerText = number;
     
 } );
 
+function calculate(mark){
+    
+    if (mark>=80 && mark<=100){
+        return 'A+';
+    } if(mark>=70 && mark<=79){
+        return 'A';
+    } if(mark>=60 && mark<=69){
+        return 'A-';
+    } if(mark>=50 && mark<=59){
+        return 'B';
+    } if(mark>=40 && mark<=49){
+        return 'C';
+    } return 'Fail';
+
+}
 
 
 
