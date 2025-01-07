@@ -4,14 +4,24 @@ const compareButton = document.getElementById('first');
 const resultShow = document.getElementById('showResult');
 const resetButton = document.getElementById('second');
 
+const ErrorStyle = "border:2px solid red";
 
+function resetErrorStyle(){
+    firstValue.style ="";
+    secondValue.style = "";
+}
 
 function isValid(){
+
+    resetErrorStyle();
+
     if(!firstValue.value){
-        resultShow.innerText = "Please input a number at first input field";
+        alert ('Enter a number at first input');
+        firstValue.style = ErrorStyle;
         return false;
     }else if(!secondValue.value){
-        resultShow.innerText = "Please input a number at second input field";
+        alert ('Enter a number at second input');
+        secondValue.style = ErrorStyle;
         return false;
     }
     return true;
@@ -32,14 +42,15 @@ compareButton.addEventListener('click',function compare(){
     }else if(number1<number2){
         resultShow.innerText = 'Number two is greater than Number one';
     }else if(number1==number2){
-        resultShow.innerText = 'Number one and Number one are equal';
+        resultShow.innerText = 'Number one and Number two are equal';
     }
 
 });
 
 
 resetButton.addEventListener('click', function reset(){
-    firstValue.value = '';
-    secondValue.value = '';
+    firstValue.value = 0;
+    secondValue.value = 0;
     resultShow.innerHTML= '';
+    resetErrorStyle();
 });
