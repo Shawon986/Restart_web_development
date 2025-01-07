@@ -7,8 +7,8 @@ const displayResult = document.getElementById('showResult');
 calculateButton.addEventListener('click',function(){
     
     
-    if (inputValue.value === ''){
-        displayResult.innerText='Number can not be empty';
+    if (inputValue.value <=0 || inputValue.value >100 ){
+        displayResult.innerText='Invalid number';
         return;
     }
         
