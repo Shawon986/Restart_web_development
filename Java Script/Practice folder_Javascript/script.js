@@ -10,3 +10,8 @@ function increase(){
 }
 plusButton.addEventListener('click', increase);
 
+function decrease(){
+    count = count-1 ;
+    resultNnumber.innerText = count;
+}
+minusButton.addEventListener('click', decrease);
