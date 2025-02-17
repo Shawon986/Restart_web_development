@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    width: 300px;
+    height: 250px;
+    background-color: aliceblue;
+    box-shadow: 0px 10px 10px 0px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+.btn{
+    display: flex;
+    gap: 25px;
+}
+#increament{
+    width: 55px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+#decreament{
+    width: 55px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
