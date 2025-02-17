@@ -5,8 +5,13 @@ const minusButton = document.getElementById('decreament');
 let count = 0;
 
 function increase(){
-    count = count+1 ;
-    resultNnumber.innerText = count;
+    if(count===10){
+        alert("Count limit has reached")
+    }else{
+        count = count+1 ;
+        resultNnumber.innerText = count;
+    }
+    
 }
 plusButton.addEventListener('click', increase);
 
