@@ -5,11 +5,26 @@ const compareBtn = document.getElementById('compare');
 const resetBtn = document.getElementById('reset');
 
 
+function isValid(){
 
+    
+
+    if(!firstInputField.value){
+        alert ('Enter a number at first input');
+        return false;
+    }else if(!secondInputField.value){
+        alert ('Enter a number at second input');
+        return false;
+    }
+    return true;
+}
 
 
 compareBtn.addEventListener('click', function(){
 
+    if(!isValid()){
+        return;
+    }
     
     const valueOne = parseFloat(firstInputField.value);
     const valueTwo = parseFloat(secondInputField.value);
