@@ -6,7 +6,11 @@ const resetBtn = document.getElementById('reset');
 
 
 
+
+
 compareBtn.addEventListener('click', function(){
+
+    
     const valueOne = parseFloat(firstInputField.value);
     const valueTwo = parseFloat(secondInputField.value);
 
@@ -14,13 +18,14 @@ compareBtn.addEventListener('click', function(){
         resultArea.innerText = 'First number is bigger than Second number'
     } else if (valueOne<valueTwo){
         resultArea.innerText = 'Second number is bigger than First number'
-    } else{
+    } else if(valueOne===valueTwo){
         resultArea.innerText = 'Both numbers are equal'
-    }
+    } 
+    
 })
 
 resetBtn.addEventListener('click', function(){
-    firstInputField.value = 0;
-    secondInputField.value = 0;
+    firstInputField.value = '';
+    secondInputField.value = '';
     resultArea.innerText = '';
 })
