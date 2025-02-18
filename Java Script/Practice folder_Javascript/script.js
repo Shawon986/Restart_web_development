@@ -18,3 +18,9 @@ compareBtn.addEventListener('click', function(){
         resultArea.innerText = 'Both numbers are equal'
     }
 })
+
+resetBtn.addEventListener('click', function(){
+    firstInputField.value = 0;
+    secondInputField.value = 0;
+    resultArea.innerText = '';
+})
