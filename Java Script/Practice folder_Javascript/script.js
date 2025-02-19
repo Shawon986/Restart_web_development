@@ -7,7 +7,7 @@ const resetButton = document.getElementById("reset");
 calculateButton.addEventListener('click', function(){
     const inputValue = parseFloat(firstInput.value);
 
-    if(inputValue<=0 || inputValue>=100){
+    if(inputValue<=0 || inputValue>100){
         displayGrade.innerText = "Enter valid number"
     }else if(inputValue>=80 && inputValue<=100){
         displayGrade.innerText = "A+"
@@ -24,4 +24,10 @@ calculateButton.addEventListener('click', function(){
     }else{
         displayGrade.innerText = "Fail"
     }
+})
+
+
+resetButton.addEventListener('click', function(){
+    firstInput.value = '';
+    displayGrade.innerText = '';
 })
