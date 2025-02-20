@@ -23,15 +23,15 @@ calculateButton.addEventListener('click', function(){
         displayGrade.innerText = "Enter valid number"
     }else if(inputValue>=80 && inputValue<=100){
         displayGrade.innerText = "Your grade is A+"
-    }else if(inputValue>=70 && inputValue<=80){
+    }else if(inputValue>=70 && inputValue<80){
         displayGrade.innerText = "Your grade is A"
-    }else if(inputValue>=60 && inputValue<=70){
+    }else if(inputValue>=60 && inputValue<70){
         displayGrade.innerText = "Your grade is A-"
-    }else if(inputValue>=50 && inputValue<=60){
+    }else if(inputValue>=50 && inputValue<60){
         displayGrade.innerText = "Your grade is B"
-    }else if(inputValue>=40 && inputValue<=50){
+    }else if(inputValue>=40 && inputValue<50){
         displayGrade.innerText = "Your grade is C"
-    }else if(inputValue>=33 && inputValue<=40){
+    }else if(inputValue>=33 && inputValue<40){
         displayGrade.innerText = "Your grade is D"
     }else{
         displayGrade.innerText = "You are Fail"
