@@ -6,6 +6,10 @@ const tableBody = document.getElementById('table_body');
 
 generateButton.addEventListener('click', function(){
     const num = parseInt(inputField.value);
+    if(!num){
+        alert("Please enter a number")
+        return;
+    }
     generateTable(num);
 });
 
