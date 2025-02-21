@@ -12,8 +12,11 @@ generateButton.addEventListener('click', function(){
 
 
 function generateTable(num){
-    const tableRow = generateRow(num,1);
-    tableBody.appendChild(tableRow);
+    for(let i = 1; i<=10; i++){
+        const tableRow = generateRow(num,i);
+        tableBody.appendChild(tableRow);
+    }
+    
 }
 
 function generateRow(num, mult){
