@@ -41,3 +41,8 @@ function generateRow(num, mult){
 
     return tableRow;
 }
+
+resetButton.addEventListener('click',function(){
+    inputField.value = '';
+    tableBody.innerHTML = '';
+})
