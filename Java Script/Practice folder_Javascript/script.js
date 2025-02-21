@@ -10,6 +10,7 @@ generateButton.addEventListener('click', function(){
         alert("Please enter a number")
         return;
     }
+    tableBody.innerHTML = '';
     generateTable(num);
 });
 
@@ -23,7 +24,7 @@ function generateTable(num){
     
 }
 
-function generateRow(num, mult){
+function generateRow(num,i){
     const cell1 = document.createElement('td');
     const cell2 = document.createElement('td');
     const cell3 = document.createElement('td');
@@ -32,9 +33,9 @@ function generateRow(num, mult){
 
     cell1.innerText = num;
     cell2.innerText = "x";
-    cell3.innerText = mult;
+    cell3.innerText = i;
     cell4.innerText = "=";
-    cell5.innerText = num*mult;
+    cell5.innerText = num*i;
 
     const tableRow = document.createElement('tr');
     tableRow.appendChild(cell1);
