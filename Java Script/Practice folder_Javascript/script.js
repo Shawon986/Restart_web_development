@@ -6,6 +6,11 @@ const reesetButton = document.getElementById('reset');
 
 generateButton.addEventListener('click',function(){
     const number = parseInt(inputField.value);
+    if(!number){
+        alert("Please type a number");
+        tableBody.innerHTML = '';
+        return;
+    }
     tableBody.innerHTML = '';
     generateTable(number);
 })
