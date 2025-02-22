@@ -1,7 +1,7 @@
 const inputField = document.getElementById('inputOne');
 const tableBody = document.getElementById('table_body');
 const generateButton = document.getElementById('generate');
-const reesetButton = document.getElementById('reset');
+const resetButton = document.getElementById('reset');
 
 
 generateButton.addEventListener('click',function(){
@@ -48,3 +48,8 @@ function generateRow(number,rowNo){
     return tableRow;
 
 }
+
+resetButton.addEventListener('click',function(){
+    inputField.value = '';
+    tableBody.innerHTML = '';
+})
