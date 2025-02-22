@@ -1,55 +1,45 @@
 const inputField = document.getElementById('inputOne');
-const generateButton = document.getElementById('generate');
-const resetButton = document.getElementById('reset');
 const tableBody = document.getElementById('table_body');
+const generateButton = document.getElementById('generate');
+const reesetButton = document.getElementById('reset');
 
 
-generateButton.addEventListener('click', function(){
-    const num = parseInt(inputField.value);
-    if(!num){
-        alert("Please enter a number")
-        return;
-    }
-    tableBody.innerHTML = '';
-    generateTable(num);
-});
+generateButton.addEventListener('click',function(){
+    const number = parseInt(inputField.value);
+    generateTable(number);
+})
 
-
-
-function generateTable(num){
+function generateTable(number){
     for(let i = 1; i<=10; i++){
-        const tableRow = generateRow(num,i);
+
+        const tableRow = generateRow(number,i);
         tableBody.appendChild(tableRow);
     }
     
 }
 
-function generateRow(num,i){
-    
-    const cells = [];
-    for(let i=1; i<=5; i++){
-        const cell = document.createElement('td');
-        cells.push(cell);
-    }
+function generateRow(number,rowNo){
 
-
-    cells[0].innerText = num;
-    cells[1].innerText = "x";
-    cells[2].innerText = i;
-    cells[3].innerText = "=";
-    cells[4].innerText = num*i;
+    const cell1 = document.createElement('td')
+    const cell2 = document.createElement('td')
+    const cell3 = document.createElement('td')
+    const cell4 = document.createElement('td')
+    const cell5 = document.createElement('td')
 
     const tableRow = document.createElement('tr');
 
-    for(let i =0; i<cells.length; i++){
-        tableRow.appendChild(cells[i])
-    }
-    
+    cell1.innerText = number;
+    cell2.innerText = "x";
+    cell3.innerText = rowNo;
+    cell4.innerText = "=";
+    cell5.innerText = number*rowNo;
+
+    tableRow.appendChild(cell1);
+    tableRow.appendChild(cell2);
+    tableRow.appendChild(cell3);
+    tableRow.appendChild(cell4);
+    tableRow.appendChild(cell5);
 
     return tableRow;
-}
 
-resetButton.addEventListener('click',function(){
-    inputField.value = '';
-    tableBody.innerHTML = '';
-})
+}
