@@ -5,12 +5,15 @@ const bottomRow = document.getElementById('bottom_row');
 
 
 generateButton.addEventListener('click',function(){
+    topRow.innerHTML='';
+    bottomRow.innerHTML = '';
+    
     for(let num = 1; num<=10 ; num++){
         const numberTable = getTable(num)
+        
         if(num<=5){
             topRow.appendChild(numberTable)
         }else{
-
             bottomRow.appendChild(numberTable);
         }
         
@@ -54,3 +57,9 @@ function getTableRow(num,row){
 
     return tableRow;
 }
+
+resetButton.addEventListener('click', function(){
+    topRow.innerHTML = '';
+    bottomRow.innerHTML = '';
+
+})
