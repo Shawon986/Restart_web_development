@@ -21,6 +21,19 @@ body{
 }
 #top_row{
     margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+#bottom_row{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.table_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 #generate{
     width: 75px;

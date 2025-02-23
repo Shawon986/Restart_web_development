@@ -3,12 +3,18 @@ const resetButton = document.getElementById('reset');
 const topRow = document.getElementById('top_row');
 const bottomRow = document.getElementById('bottom_row');
 
-generateButton.addEventListener('click',function(){
-    const tableOf1 = getTable(1);
-    topRow.appendChild(tableOf1);
 
-    const tableOf6 = getTable(6);
-    bottomRow.appendChild(tableOf6);
+generateButton.addEventListener('click',function(){
+    for(let num = 1; num<=10 ; num++){
+        const numberTable = getTable(num)
+        if(num<=5){
+            topRow.appendChild(numberTable)
+        }else{
+
+            bottomRow.appendChild(numberTable);
+        }
+        
+    }
 
 })
 
@@ -21,9 +27,10 @@ function getTable(num){
         const tableRow = getTableRow(num,row)
         tableBody.appendChild(tableRow);
     }
+    
     numberTable.appendChild(tableBody);
-
     return numberTable;
+    
 }
 
 function getTableRow(num,row){
