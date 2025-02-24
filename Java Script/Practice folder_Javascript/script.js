@@ -4,7 +4,7 @@ const topRow = document.getElementById('top_row');
 const bottomRow = document.getElementById('bottom_row');
 
 
-generateButton.addEventListener('click',function(){
+generateButton.addEventListener('click',() =>{
     topRow.innerHTML='';
     bottomRow.innerHTML = '';
     
@@ -21,7 +21,7 @@ generateButton.addEventListener('click',function(){
 
 })
 
-function getTable(num){
+const getTable = (num) =>{
     const numberTable = document.createElement('table');
     const tableBody = document.createElement('tbody');
 
@@ -36,10 +36,10 @@ function getTable(num){
     
 }
 
-function getTableRow(num,row){
+const getTableRow = (num,row) => {
     const cells = [];
     const rowData = [num,"x",row,"=",num*row];
-    rowData.forEach(function(data){
+    rowData.forEach((data) =>{
         const cell = document.createElement('td');
         cell.innerText = data;
         cells.push(cell);
@@ -47,14 +47,14 @@ function getTableRow(num,row){
 
     const tableRow = document.createElement('tr');
 
-    cells.forEach(function(cell){
+    cells.forEach((cell)=>{
         tableRow.appendChild(cell);
     })
     
     return tableRow;
 }
 
-resetButton.addEventListener('click', function(){
+resetButton.addEventListener('click', () =>{
     topRow.innerHTML = '';
     bottomRow.innerHTML = '';
 
