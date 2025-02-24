@@ -38,23 +38,19 @@ function getTable(num){
 
 function getTableRow(num,row){
     const cells = [];
-    for (let i = 1; i<=5; i++){
+    const rowData = [num,"x",row,"=",num*row];
+    rowData.forEach(function(data){
         const cell = document.createElement('td');
+        cell.innerText = data;
         cells.push(cell);
-    }
-
-    cells[0].innerText = num;
-    cells[1].innerText = "x";
-    cells[2].innerText = row;
-    cells[3].innerText = "=";
-    cells[4].innerText = num*row;
+    })
 
     const tableRow = document.createElement('tr');
 
-    for(let i = 0; i<cells.length; i++){
-        tableRow.appendChild(cells[i]);
-    }
-
+    cells.forEach(function(cell){
+        tableRow.appendChild(cell);
+    })
+    
     return tableRow;
 }
 
