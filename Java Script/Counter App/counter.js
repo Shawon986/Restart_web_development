@@ -9,8 +9,7 @@ incrementButton.addEventListener("click",incrementCount);
 function incrementCount(){
     if(count>=20){
         alert("You have reached the maximum value")
-        displayElement.innerText = count ;
-        return count;
+    
     }else{
         count +=1;
         displayElement.innerText = count ;
@@ -23,8 +22,6 @@ decrementButton.addEventListener("click",decrementCount);
 function decrementCount(){
     if(count<=0){
         alert("You have reached the minimum limit")
-        displayElement.innerText = count ;
-        return count;
 
     }else{
         count -= 1;
